@@ -1,0 +1,28 @@
+/* ... previous mobile app styles ... */
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #d2691e;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+.bottom-nav button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark-mode { background-color: #222; color: #eee; }
+body.dark-mode .product { background-color: #333; color: #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+body.dark-mode form { background-color: #333; color: #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+body.dark-mode input { background-color: #555; color: #eee; border: 1px solid #888; }
+body.dark-mode button { background-color: #a0522d; color: white; }
