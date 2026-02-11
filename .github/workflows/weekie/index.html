@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wookie Cookie Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <h1>🍪 Wookie Cookie Shop</h1>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeBtn" style="margin-bottom:10px;">🌙 Dark Mode</button>
+
+    <!-- Product Card -->
+    <div class="product">
+        <img src="cookie.png" alt="Classic Cookie" width="200" style="border-radius:15px; margin-bottom:15px;">
+        <h2>Classic Cookie</h2>
+        <p>Price: KES 100</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <!-- Cart -->
+    <p id="cart">Cart: 0 | Total: KES 0</p>
+
+    <!-- Checkout Form -->
+    <h2>Checkout via WhatsApp</h2>
+    <form id="checkoutForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="address" placeholder="Your Address" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <button type="submit">Send Order to WhatsApp</button>
+    </form>
+
+    <!-- WhatsApp Direct Link -->
+    <a href="https://wa.me/254781894436" target="_blank" style="
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 1em;
+        margin-top: 10px;">
+        Chat on WhatsApp
+    </a>
+
+    <p id="orderMessage"></p>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <button onclick="scrollToTop()">🏠 Home</button>
+        <button onclick="scrollToCart()">🛒 Cart</button>
+        <button onclick="scrollToCheckout()">💳 Checkout</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
